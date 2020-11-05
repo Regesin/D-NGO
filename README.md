@@ -49,18 +49,25 @@ In almost every country in the world, there’s a profound desire for positive s
  
  ### Steps to install 
  1. Clone files
+ 
  2. Install nodemodules(NPM) in currect working directory
  ```
  $ sudo npm install
  ```
+ 
  3. [Install ganache and press Quickstart](https://youtu.be/3PBR4r9aKSg)
+ 
  4. [Install Solidity compiler](https://solidity.readthedocs.io/en/v0.5.3/installing-solidity.html)
+ 
  5. [Install Web3 package](https://www.npmjs.com/package/web3)
+ 
  6. Compile and migrate solidity code
+ 
  ```
  $ sudo truffle migrate
  ```
  7. Runing in lite server
+ 
  ```
  $ sudo npm run dev
  ```
