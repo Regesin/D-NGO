@@ -15,18 +15,23 @@ In almost every country in the world, there’s a profound desire for positive s
 * We uses decentralized curation of proposals, and proposals that are approved have to show proof that they’ve taken the actions they outlined in their submission for funding, as well as reporting on the results. 
 * Users will be able to track the proposal funding through the blockchain, and see concrete evidence of exactly what results their support achieved.
 
-```
 
- * The donations can be used by community service, civil structure restoration and gadget building. 
- * Any NGO over the internet can create a project to raise donations.
- * The NGOs can receive donations from anyone on the internet, with an Ethereum wallet and the proper usage of
+
+ > The donations can be used by community service, civil structure restoration and gadget building. 
+ 
+ > Any NGO over the internet can create a project to raise donations.
+ 
+ > The NGOs can receive donations from anyone on the internet, with an Ethereum wallet and the proper usage of
    these funds are then moderated by volunteers on the website called, Moderators.
- * Moderators validate completed withdrawals by the NGOs and award reputation tokens to the respective NGOs.
- * The NGOs are incentivized by tokens to keep submitting proof and perform valid transactions so that 
+   
+ > Moderators validate completed withdrawals by the NGOs and award reputation tokens to the respective NGOs.
+ 
+ > The NGOs are incentivized by tokens to keep submitting proof and perform valid transactions so that 
    they can do more withdrawals and of larger amounts.
- * The Moderator are incentivized by tokens for validating the NGOs
+   
+ > The Moderator are incentivized by tokens for validating the NGOs
 
-```
+
 
 ### Usage of [ERC20 Tokens](https://cointelegraph.com/explained/erc-20-tokens-explained)
    - Reputation Token (rep) - For NGOs to their work
