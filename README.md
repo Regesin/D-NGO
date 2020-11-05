@@ -42,10 +42,10 @@ In almost every country in the world, there’s a profound desire for positive s
 
 
 ### How it works
- 1. Project creation will happen by NGOs.
- 2. Donors will donate.  
- 3. NGOs will spend money accordingly with valid proof.
- 4. Modarators will validate the NGOs proof.
+ - Project creation will happen by NGOs.
+ - Donors will donate.  
+ - NGOs will spend money accordingly with valid proof.
+ - Modarators will validate the NGOs proof.
  
  ### Steps to install 
  1. Clone files
