@@ -56,7 +56,8 @@ In almost every country in the world, there’s a profound desire for positive s
  1. Clone files
  
  2. Install nodemodules(NPM) in currect working directory
- ```
+ 
+ ```shell
  $ sudo npm install
  ```
  
@@ -68,12 +69,12 @@ In almost every country in the world, there’s a profound desire for positive s
  
  6. Compile and migrate solidity code
  
- ```
+ ```shell
  $ sudo truffle migrate
  ```
  7. Runing in lite server
  
- ```
+ ```shell
  $ sudo npm run dev
  ```
 
