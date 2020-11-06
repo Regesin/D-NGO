@@ -29,7 +29,7 @@ In almost every country in the world, there’s a profound desire for positive s
  > The NGOs are incentivized by tokens to keep submitting proof and perform valid transactions so that 
    they can do more withdrawals and of larger amounts.
    
- > The Moderator are incentivized by tokens for validating the NGOs
+ > The Moderator are incentivized by tokens for validating the NGOs.
 
 
 
