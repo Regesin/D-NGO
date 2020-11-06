@@ -43,7 +43,7 @@ In almost every country in the world, there’s a profound desire for positive s
    - Verifiers Token (vep)  - For Modatators to validating projects work
    
 ### Technology Stack
-   - [HTML,CSS,Javascript](https://www.w3.org/standards/webdesign/htmlcss.html)
+   - [𝙷𝚃𝙼𝙻,𝙲𝚂𝚂,𝙹𝚊𝚟𝚊𝚜𝚌𝚛𝚒𝚙𝚝](https://www.w3.org/standards/webdesign/htmlcss.html)
    - [Smart Contracts](https://www.ibm.com/blogs/blockchain/2018/07/what-are-smart-contracts-on-blockchain/)
    - [Web3 package](https://github.com/ethereum/web3.js/)
    - [Metamask Wallet](https://medium.com/@seanschoi/what-is-metamask-really-what-is-it-7bc1bf48c75)
