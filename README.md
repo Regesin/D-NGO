@@ -1,7 +1,7 @@
 # 𝐃𝐞𝐜𝐞𝐧𝐭𝐫𝐚𝐥𝐢𝐳𝐞𝐝 𝐍𝐆𝐎 (𝓓-𝓝𝓖𝓞) 
 > This is an [𝙀𝙩𝙝𝙚𝙧𝙚𝙪𝙢](https://ethereum.org/en/) based [𝘿𝙚𝙘𝙚𝙣𝙩𝙧𝙖𝙡𝙞𝙯𝙚𝙙 𝙖𝙥𝙥𝙡𝙞𝙘𝙖𝙩𝙞𝙤𝙣](https://blockchainhub.net/decentralized-applications-dapps/) that helps NGOs and Donors maintain accountability and increase efficiency
 
-### Problem
+### 𝐏𝐫𝐨𝐛𝐥𝐞𝐦
 In almost every country in the world, there’s a profound desire for positive social change, but individuals feel disempowered to do anything to make progress towards it. 𝐖𝐡𝐚𝐭 𝐬𝐭𝐨𝐩𝐬 𝐭𝐡𝐞𝐦?
 
   ✦ Financial leakage
@@ -14,7 +14,7 @@ In almost every country in the world, there’s a profound desire for positive s
 
   ✦ Lack of Commitment
 
-### solution
+### 𝐬𝐨𝐥𝐮𝐭𝐢𝐨𝐧
 * We are going to cut out the middleman organizations who are a relic of pre-internet days.
 * People will no longer need to give money to a non-transparent intermediary when they could give it directly to groups on the ground who are ready to take direct action.
 * We uses decentralized curation of proposals, and proposals that are approved have to show proof that they’ve taken the actions they outlined in their submission for funding, as well as reporting on the results. 
@@ -38,11 +38,11 @@ In almost every country in the world, there’s a profound desire for positive s
 
 
 
-### Usage of [𝐄𝐑𝐂-𝟐𝟎 𝐓𝐨𝐤𝐞𝐧𝐬](https://cointelegraph.com/explained/erc-20-tokens-explained)
+### 𝐔𝐬𝐚𝐠𝐞 𝐨𝐟 [𝐄𝐑𝐂-𝟐𝟎 𝐓𝐨𝐤𝐞𝐧𝐬](https://cointelegraph.com/explained/erc-20-tokens-explained)
    - Reputation Token (rep) - For NGOs to their work
    - Verifiers Token (vep)  - For Modatators to validating projects work
    
-### Technology Stack
+### 𝐓𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲 𝐒𝐭𝐚𝐜𝐤
    - [𝙷𝚃𝙼𝙻,𝙲𝚂𝚂,𝙹𝚊𝚟𝚊𝚜𝚌𝚛𝚒𝚙𝚝](https://www.w3.org/standards/webdesign/htmlcss.html)
    - [𝚂𝚖𝚊𝚛𝚝 𝙲𝚘𝚗𝚝𝚛𝚊𝚌𝚝𝚜](https://www.ibm.com/blogs/blockchain/2018/07/what-are-smart-contracts-on-blockchain/)
    - [𝚆𝚎𝚋𝟹 𝙿𝚊𝚌𝚔𝚊𝚐𝚎](https://github.com/ethereum/web3.js/)
@@ -51,13 +51,13 @@ In almost every country in the world, there’s a profound desire for positive s
 
 
 
-### How it works
+### 𝐇𝐨𝐰 𝐢𝐭 𝐰𝐨𝐫𝐤𝐬
  - Project creation will happen by NGOs.
  - Donors will donate.  
  - NGOs will spend money accordingly with valid proof.
  - Modarators will validate the NGOs proof.
  
- ### Steps to install 
+ ### 𝐒𝐭𝐞𝐩𝐬 𝐭𝐨 𝐢𝐧𝐬𝐭𝐚𝐥𝐥 
  1. Clone files
  
  2. Install nodemodules(NPM) in currect working directory
