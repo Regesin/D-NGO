@@ -1,6 +1,25 @@
 # 𝐃𝐞𝐜𝐞𝐧𝐭𝐫𝐚𝐥𝐢𝐳𝐞𝐝 𝐍𝐆𝐎 (𝓓-𝓝𝓖𝓞) 
 > This is an [𝙀𝙩𝙝𝙚𝙧𝙚𝙪𝙢](https://ethereum.org/en/) based [𝘿𝙚𝙘𝙚𝙣𝙩𝙧𝙖𝙡𝙞𝙯𝙚𝙙 𝙖𝙥𝙥𝙡𝙞𝙘𝙖𝙩𝙞𝙤𝙣](https://blockchainhub.net/decentralized-applications-dapps/) that helps NGOs and Donors maintain accountability and increase efficiency
 
+## #𝐄𝐭𝐡𝐞𝐫𝐞𝐮𝐦 
+Ethereum is open access to digital money and data-friendly services for everyone – no matter your background or location. It's a community-built technology behind the cryptocurrency ether (ETH) and thousands of applications you can use today.
+
+> [Read more...](https://ethereum.org/en/)
+
+## #𝐃𝐞𝐜𝐞𝐧𝐭𝐫𝐚𝐥𝐢𝐳𝐞𝐝 𝐚𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧(𝐃𝐚𝐩𝐩𝐬)
+Decentralized applications (dApps) are digital applications or programs that exist and run on a blockchain or P2P network of computers instead of a single computer, and are outside the purview and control of a single authority.
+
+> [Read more...](https://www.investopedia.com/terms/d/decentralized-applications-dapps.asp)
+
+
+## #𝐄𝐑𝐂-𝟐𝟎 𝐓𝐨𝐤𝐞𝐧𝐬
+One of the most significant Ethereum tokens is known as ERC-20. ERC-20 has emerged as the technical standard; it is used for all smart contracts on the Ethereum blockchain for token implementation and provides a list of rules that all Ethereum-based tokens must follow.
+
+ERC-20 is similar, in some respects, to bitcoin, Litecoin, and any other cryptocurrency; ERC-20 tokens are blockchain-based assets that have value and can be sent and received. The primary difference is that instead of running on their own blockchain, ERC-20 tokens are issued on the Ethereum network. 
+
+> [Read more...](https://www.investopedia.com/news/what-erc20-and-what-does-it-mean-ethereum/)
+
+
 ### 𝐏𝐫𝐨𝐛𝐥𝐞𝐦
 In almost every country in the world, there’s a profound desire for positive social change, but individuals feel disempowered to do anything to make progress towards it. 𝐖𝐡𝐚𝐭 𝐬𝐭𝐨𝐩𝐬 𝐭𝐡𝐞𝐦?
 
@@ -48,6 +67,7 @@ In almost every country in the world, there’s a profound desire for positive s
    - [𝚆𝚎𝚋𝟹 𝙿𝚊𝚌𝚔𝚊𝚐𝚎](https://github.com/ethereum/web3.js/)
    - [𝙼𝚎𝚝𝚊𝚖𝚊𝚜𝚔 𝚆𝚊𝚕𝚕𝚎𝚝](https://medium.com/@seanschoi/what-is-metamask-really-what-is-it-7bc1bf48c75)
    - [𝙶𝚊𝚗𝚊𝚌𝚑𝚎](https://www.trufflesuite.com/docs/ganache/quickstart)
+
 
 
 
