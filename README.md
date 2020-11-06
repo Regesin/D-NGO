@@ -1,5 +1,5 @@
 # Decentralized NGO (D-NGO) 
-> This is an [Ethereum](https://ethereum.org/en/) based [Decentralized application](https://blockchainhub.net/decentralized-applications-dapps/) that helps NGOs and Donors maintain accountability and [increase efficiency](index.png) .
+> This is an [Ethereum](https://ethereum.org/en/) based [Decentralized application](https://blockchainhub.net/decentralized-applications-dapps/) that helps NGOs and Donors maintain accountability and [increase efficiency](https://ethereum.org/static/21c418bf00f87ff4d4b83e3499ddb391/0ee04/ethereum-logo-wireframe.png).
 
 ### Problem
 In almost every country in the world, there’s a profound desire for positive social change, but individuals feel disempowered to do anything to make progress towards it. What stops them?
