@@ -1,4 +1,4 @@
-# Decentralized NGO (𝓓-𝓝𝓖𝓞) 
+# 𝐃𝐞𝐜𝐞𝐧𝐭𝐫𝐚𝐥𝐢𝐳𝐞𝐝 𝐍𝐆𝐎 (𝓓-𝓝𝓖𝓞) 
 > This is an [Ethereum](https://ethereum.org/en/) based [Decentralized application](https://blockchainhub.net/decentralized-applications-dapps/) that helps NGOs and Donors maintain accountability and increase efficiency
 
 ### Problem
