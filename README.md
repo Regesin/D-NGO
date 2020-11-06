@@ -44,10 +44,10 @@ In almost every country in the world, there’s a profound desire for positive s
    
 ### Technology Stack
    - [𝙷𝚃𝙼𝙻,𝙲𝚂𝚂,𝙹𝚊𝚟𝚊𝚜𝚌𝚛𝚒𝚙𝚝](https://www.w3.org/standards/webdesign/htmlcss.html)
-   - [Smart Contracts](https://www.ibm.com/blogs/blockchain/2018/07/what-are-smart-contracts-on-blockchain/)
-   - [Web3 package](https://github.com/ethereum/web3.js/)
-   - [Metamask Wallet](https://medium.com/@seanschoi/what-is-metamask-really-what-is-it-7bc1bf48c75)
-   - [Ganache](https://www.trufflesuite.com/docs/ganache/quickstart)
+   - [𝚂𝚖𝚊𝚛𝚝 𝙲𝚘𝚗𝚝𝚛𝚊𝚌𝚝𝚜](https://www.ibm.com/blogs/blockchain/2018/07/what-are-smart-contracts-on-blockchain/)
+   - [𝚆𝚎𝚋𝟹 𝙿𝚊𝚌𝚔𝚊𝚐𝚎](https://github.com/ethereum/web3.js/)
+   - [𝙼𝚎𝚝𝚊𝚖𝚊𝚜𝚔 𝚆𝚊𝚕𝚕𝚎𝚝](https://medium.com/@seanschoi/what-is-metamask-really-what-is-it-7bc1bf48c75)
+   - [𝙶𝚊𝚗𝚊𝚌𝚑𝚎](https://www.trufflesuite.com/docs/ganache/quickstart)
 
 
 
