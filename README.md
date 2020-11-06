@@ -4,15 +4,15 @@
 ### Problem
 In almost every country in the world, there’s a profound desire for positive social change, but individuals feel disempowered to do anything to make progress towards it. What stops them?
 
-✦ Financial leakage
+  ✦ Financial leakage
 
-✦ Middleman organizations
+  ✦ Middleman organizations
 
-✦ Politization of NGOs
+  ✦ Politization of NGOs
 
-✦ Lack of Feedback and Social Support Suppresses Enthusiasm
+  ✦ Lack of Feedback and Social Support Suppresses Enthusiasm
 
-✦ Lack of Commitment
+  ✦ Lack of Commitment
 
 ### solution
 * We are going to cut out the middleman organizations who are a relic of pre-internet days.
@@ -22,19 +22,19 @@ In almost every country in the world, there’s a profound desire for positive s
 
 
 
- > The donations can be used by community service, civil structure restoration and gadget building. 
+ > ✯ The donations can be used by community service, civil structure restoration and gadget building. 
  
- > Any NGO over the internet can create a project to raise donations.
+ > ✯ Any NGO over the internet can create a project to raise donations.
  
- > The NGOs can receive donations from anyone on the internet, with an Ethereum wallet and the proper usage of
-   these funds are then moderated by volunteers on the website called, Moderators.
+ > ✯ The NGOs can receive donations from anyone on the internet, with an Ethereum wallet and the proper usage of
+      these funds are then moderated by volunteers on the website called, Moderators.
    
- > Moderators validate completed withdrawals by the NGOs and award reputation tokens to the respective NGOs.
+ > ✯ Moderators validate completed withdrawals by the NGOs and award reputation tokens to the respective NGOs.
  
- > The NGOs are incentivized by tokens to keep submitting proof and perform valid transactions so that 
-   they can do more withdrawals and of larger amounts.
+ > ✯ The NGOs are incentivized by tokens to keep submitting proof and perform valid transactions so that 
+     they can do more withdrawals and of larger amounts.
    
- > The Moderator are incentivized by tokens for validating the NGOs.
+ > ✯ The Moderator are incentivized by tokens for validating the NGOs.
 
 
 
