@@ -2,7 +2,7 @@
 > This is an [𝙀𝙩𝙝𝙚𝙧𝙚𝙪𝙢](https://ethereum.org/en/) based [𝘿𝙚𝙘𝙚𝙣𝙩𝙧𝙖𝙡𝙞𝙯𝙚𝙙 𝙖𝙥𝙥𝙡𝙞𝙘𝙖𝙩𝙞𝙤𝙣](https://blockchainhub.net/decentralized-applications-dapps/) that helps NGOs and Donors maintain accountability and increase efficiency
 
 ### Problem
-In almost every country in the world, there’s a profound desire for positive social change, but individuals feel disempowered to do anything to make progress towards it. What stops them?
+In almost every country in the world, there’s a profound desire for positive social change, but individuals feel disempowered to do anything to make progress towards it. 𝐖𝐡𝐚𝐭 𝐬𝐭𝐨𝐩𝐬 𝐭𝐡𝐞𝐦?
 
   ✦ Financial leakage
 
@@ -22,19 +22,19 @@ In almost every country in the world, there’s a profound desire for positive s
 
 
 
- > ✯ The donations can be used by community service, civil structure restoration and gadget building. 
+ >  The donations can be used by community service, civil structure restoration and gadget building. 
  
- > ✯ Any NGO over the internet can create a project to raise donations.
+ >  Any NGO over the internet can create a project to raise donations.
  
- > ✯ The NGOs can receive donations from anyone on the internet, with an Ethereum wallet and the proper usage of
-      these funds are then moderated by volunteers on the website called, Moderators.
+ >  The NGOs can receive donations from anyone on the internet, with an Ethereum wallet and the proper usage of
+    these funds are then moderated by volunteers on the website called, Moderators.
    
- > ✯ Moderators validate completed withdrawals by the NGOs and award reputation tokens to the respective NGOs.
+ >  Moderators validate completed withdrawals by the NGOs and award reputation tokens to the respective NGOs.
  
- > ✯ The NGOs are incentivized by tokens to keep submitting proof and perform valid transactions so that 
-     they can do more withdrawals and of larger amounts.
+ >  The NGOs are incentivized by tokens to keep submitting proof and perform valid transactions so that 
+    they can do more withdrawals and of larger amounts.
    
- > ✯ The Moderator are incentivized by tokens for validating the NGOs.
+ >  The Moderator are incentivized by tokens for validating the NGOs.
 
 
 
