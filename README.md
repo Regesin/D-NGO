@@ -86,7 +86,7 @@ In almost every country in the world, there’s a profound desire for positive s
  $ sudo npm install
  ```
  
- 3. [Install ganache and press Quickstart](https://youtu.be/3PBR4r9aKSg)
+ 3. [Install Ganache and press quickstart](https://youtu.be/3PBR4r9aKSg)
  
  4. [Install Solidity compiler](https://solidity.readthedocs.io/en/v0.5.3/installing-solidity.html)
  
@@ -97,7 +97,7 @@ In almost every country in the world, there’s a profound desire for positive s
  ```shell
  $ sudo truffle migrate
  ```
- 7. Runing in lite server
+ 7. Run npm lite server
  
  ```shell
  $ sudo npm run dev
