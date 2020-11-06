@@ -5,9 +5,13 @@
 In almost every country in the world, there’s a profound desire for positive social change, but individuals feel disempowered to do anything to make progress towards it. What stops them?
 
 ✦ Financial leakage
+
 ✦ Middleman organizations
+
 ✦ Politization of NGOs
+
 ✦ Lack of Feedback and Social Support Suppresses Enthusiasm
+
 ✦ Lack of Commitment
 
 ### solution
