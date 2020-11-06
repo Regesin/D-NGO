@@ -33,7 +33,7 @@ In almost every country in the world, there’s a profound desire for positive s
 
 
 
-### Usage of [ERC20 Tokens](https://cointelegraph.com/explained/erc-20-tokens-explained)
+### Usage of [𝐄𝐑𝐂𝟐𝟎 𝐓𝐨𝐤𝐞𝐧𝐬](https://cointelegraph.com/explained/erc-20-tokens-explained)
    - Reputation Token (rep) - For NGOs to their work
    - Verifiers Token (vep)  - For Modatators to validating projects work
    
