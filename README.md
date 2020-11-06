@@ -14,7 +14,7 @@ In almost every country in the world, there’s a profound desire for positive s
 
   ✦ Lack of Commitment
 
-### 𝐬𝐨𝐥𝐮𝐭𝐢𝐨𝐧
+### 𝐒𝐨𝐥𝐮𝐭𝐢𝐨𝐧
 * We are going to cut out the middleman organizations who are a relic of pre-internet days.
 * People will no longer need to give money to a non-transparent intermediary when they could give it directly to groups on the ground who are ready to take direct action.
 * We uses decentralized curation of proposals, and proposals that are approved have to show proof that they’ve taken the actions they outlined in their submission for funding, as well as reporting on the results. 
