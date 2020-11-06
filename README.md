@@ -1,13 +1,14 @@
 # 𝐃𝐞𝐜𝐞𝐧𝐭𝐫𝐚𝐥𝐢𝐳𝐞𝐝 𝐍𝐆𝐎 (𝓓-𝓝𝓖𝓞) 
-> This is an [Ethereum](https://ethereum.org/en/) based [Decentralized application](https://blockchainhub.net/decentralized-applications-dapps/) that helps NGOs and Donors maintain accountability and increase efficiency
+> This is an [𝙀𝙩𝙝𝙚𝙧𝙚𝙪𝙢](https://ethereum.org/en/) based [𝘿𝙚𝙘𝙚𝙣𝙩𝙧𝙖𝙡𝙞𝙯𝙚𝙙 𝙖𝙥𝙥𝙡𝙞𝙘𝙖𝙩𝙞𝙤𝙣](https://blockchainhub.net/decentralized-applications-dapps/) that helps NGOs and Donors maintain accountability and increase efficiency
 
 ### Problem
 In almost every country in the world, there’s a profound desire for positive social change, but individuals feel disempowered to do anything to make progress towards it. What stops them?
-* Financial leakage
-* Middleman organizations
-* Politization of NGOs
-* Lack of Feedback and Social Support Suppresses Enthusiasm
-* Lack of Commitment
+
+✦ Financial leakage
+✦ Middleman organizations
+✦ Politization of NGOs
+✦ Lack of Feedback and Social Support Suppresses Enthusiasm
+✦ Lack of Commitment
 
 ### solution
 * We are going to cut out the middleman organizations who are a relic of pre-internet days.
@@ -33,7 +34,7 @@ In almost every country in the world, there’s a profound desire for positive s
 
 
 
-### Usage of [𝐄𝐑𝐂𝟐𝟎 𝐓𝐨𝐤𝐞𝐧𝐬](https://cointelegraph.com/explained/erc-20-tokens-explained)
+### Usage of [𝐄𝐑𝐂-𝟐𝟎 𝐓𝐨𝐤𝐞𝐧𝐬](https://cointelegraph.com/explained/erc-20-tokens-explained)
    - Reputation Token (rep) - For NGOs to their work
    - Verifiers Token (vep)  - For Modatators to validating projects work
    
