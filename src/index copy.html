@@ -17,17 +17,16 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-      /* @font-face {
+      @font-face {
         
         font-family: 'nunito';
-        src: url('Nunito-Regular.ttf'); 
-      } */
+        src: url('Nunito-Regular.ttf'); /* IE9 Compat Modes */
+      }
       html{
         background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(d.jpg) no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-position: fixed;
   color: #ffffff;
-  font-family: sans-serif;
       }
       
       .sidenav {
@@ -79,54 +78,16 @@
         * {
           box-sizing: border-box;
         }
-
+        
         /* Create three unequal columns that floats next to each other */
         /* .column {
           float: left;
           padding: 10px;
           height: 100px; 
         } */
-        .form-control {
-  width: 100%;
-  overflow: hidden;
-  font-size: 20px;
-  padding: 8px 0;
-  margin: 8px 0;
-  border-bottom: 3px solid #4caf50;
-}
-/* .form-group {
-  width: 100%;
-  overflow: hidden;
-  font-size: 20px;
-  padding: 8px 0;
-  margin: 8px 0;
-  border-bottom: 1px solid #4caf50;
-} */
-input{
-  border: none;
-  outline: none;
-  background: none;
-  color: white;
-  font-size: 18px;
-  width: 80%;
-  float: left;
-  margin: 0 10px;
-}
-button{
-  width: 100%;
-  background: none;
-  border: 2px solid #4caf50;
-  color: white;
-  padding: 5px;
-  font-size: 18px;
-  cursor: pointer;
-  margin: 12px 0;
-}
-
-        .column1, .column2, .column3{
-          width: 45%;
+        .column{
+          width: 300px;
           height: 45px;
-         
           border-radius: 5px;
 outline:solid #f1f1f1;
           color: #ffffff;
@@ -141,22 +102,6 @@ outline:solid #f1f1f1;
   margin: 8px 0;
   border: 1px solid #4caf50;
   }  */
-  .column1{
-    left:450px;
-    top: 50px;
-    position: relative;
-  }
-  .column2{
-    position: relative;
-    left :50px;
-    top: 100px;
-  }
-  .column3{
-    position: relative;
-    left: 50%;
-    bottom: 65px;
-    top: 33px;
-      }
         .left, .right {
           width: 33%;
         }
@@ -172,32 +117,23 @@ outline:solid #f1f1f1;
           clear: both;
       
         }
-        .hd1, .hd2{
-        position: relative; 
-        font-size: 30px;
-        width:400px;
-        height: 45px;
-        border-radius: 5px;
-        outline:solid #f1f1f1;
-        color: #ffffff;
-         cursor: pointer;
-        }
     
       </style>
       <center><div class="text-center"  style="background-color: #111; color: azure; background: rgb(33, 34, 33, 0.4);">
-        <h1>Decentralized NGO</h1>
+        <h1>Help Anyone</h1>
+        <h2>Choose Your Role</h2>
       </div></center>
-       <div class="row">
-        <div class="column1" style="background-color: rgb(30, 167, 83, 0.1); cursor: pointer; ">
-        <center><h1 onclick="App.SET_PROJECT_CREATOR()">Project Creator</h1></center>
+      <center><div class="row">
+        <div class="column" style="background-color: rgb(30, 167, 83, 0.1); cursor: pointer; ">
+        <h1 onclick="App.SET_PROJECT_CREATOR()">Project Creator</h1>
            
          </div>
-         <div class="column2" style="background-color:rgb(30, 167, 83, 0.1); cursor: pointer;">
-          <center><h1 onclick="App.SET_MODERATOR()">Moderator</h1></center>
+         <div class="column" style="background-color:rgb(30, 167, 83, 0.1); cursor: pointer;">
+          <h1 onclick="App.SET_MODERATOR()">Moderator</h1>
          
          </div>
-         <div class="column3" style="background-color:rgb(30, 167, 83, 0.1); cursor: pointer;">
-          <center><h1 onclick="App.SET_DONOR()">Donor</h1></center>
+         <div class="column" style="background-color:rgb(30, 167, 83, 0.1); cursor: pointer;">
+          <h1 onclick="App.SET_DONOR()">Donor</h1>
         <!-- <div id="column" class="column left text-center" style="background-color: rgb(30, 167, 83, 0.1); cursor: pointer; ">
          <center><h1 onclick="App.SET_PROJECT_CREATOR()">Project Creator</h1></center>
           
@@ -210,10 +146,8 @@ outline:solid #f1f1f1;
           <center><h1 onclick="App.SET_DONOR()">Donor</h1></center> -->
         
         </div>
-      </div>
-      <div style="width: 100%; height: 1000px;"></div>
+      </div></center>
     </div>
-    <!-- <div style="width: 100%; height: 1000px;"></div> -->
 
     <div>
       <div id="PROJECT-CREATOR">
@@ -229,11 +163,9 @@ outline:solid #f1f1f1;
         <a onclick="App.goToViewAllAdmins()">View All Admins</a>
         <a onclick="App.goToWithdraw()">Withdraw from a Project</a>
         <a onclick="App.goToViewTransactions()">View All Transactions</a>
-        <!-- <a onclick="App.goToSubmitProof()">Submit Proof</a>
+        <a onclick="App.goToSubmitProof()">Submit Proof</a>
         <a onclick="App.goToViewRepTokens()">View Reputation Tokens</a>
-         -->
       </div>
-      
       <script>
         function openNav() {
           document.getElementById('mySidenav').style.width = '250px'
@@ -257,46 +189,45 @@ outline:solid #f1f1f1;
 
       <div id="createProjectHTML" class="text-center">
         <form onSubmit="App.createProject(); return false;">
-         <table> 
-           <tr><div class="form-group">
-            <td><label for="name">Name:</label></td>
-            <td><input
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input
               type="text"
               class="form-control"
               id="name"
               placeholder="Enter name"
               name="name"
-            /></td>
-          </div></tr>
-          <tr><div class="form-group">
-           <td> <label for="desc">Desc:</label></td>
-            <td><input
+            />
+          </div>
+          <div class="form-group">
+            <label for="desc">Desc:</label>
+            <input
               type="text"
               class="form-control"
               id="desc"
               placeholder="Enter desc"
               name="desc"
-            /></td>
-          </div></tr>
-          <tr><div class="form-group">
-            <td><label for="limit">limit:</label></td>
-            <td><input
+            />
+          </div>
+          <div class="form-group">
+            <label for="limit">limit:</label>
+            <input
               type="number"
               class="form-control"
               id="limit"
               placeholder="Enter value"
               name="limit"
-            /></td>
-          </div></tr>
+            />
+          </div>
 
-          <tr><td colspan="2" style="text-align: center;"><button type="submit" class="btn btn-default">Submit</button></td></tr></table>
+          <button type="submit" class="btn btn-default">Submit</button>
         </form>
-      </div><br>
+      </div>
 
       <div id="viewAllProjectsHTML">
-        <center><div class="text-center">View All Projects</div></center>
+        <div class="text-center">View All Projects</div>
         <ul id="allProjects" class="list-unstyled text-center">
-          <div class="allProjectsTemplate" style="border: 2px solid #4caf50; width: 400px; ">
+          <div class="allProjectsTemplate" style="border-style: solid;">
             <label>
               <div class="pID">Task ID</div>
               <div class="pName">Name</div>
@@ -311,7 +242,7 @@ outline:solid #f1f1f1;
       <div id="viewMyProjectsHTML">
         <div class="text-center">View My Project</div>
         <ul id="myProjects" class="list-unstyled text-center">
-          <div class="myProjectsTemplate" style="border: 2px solid #4caf50; width: 400px;">
+          <div class="myProjectsTemplate" style="border-style: solid;">
             <label>
               <div class="pID">Task ID</div>
               <div class="pName">Name</div>
@@ -331,7 +262,7 @@ outline:solid #f1f1f1;
       <div id="viewAllAdminsHTML">
         <div class="="text-center>ALL ADMINS</div>
         <ul id="allAdmins" class="list-unstyled text-center">
-          <div class="allAdminsTemplate" style="border: 2px solid #4caf50; width: 400px;">
+          <div class="allAdminsTemplate" style="border-style: solid;">
             <label>
               <div class="adminAddr">Project Creator Addresses</div>
             </label>
@@ -342,60 +273,59 @@ outline:solid #f1f1f1;
       <div id="withdrawFromProjectHTML">
         <div>WITHDRAW</div>
         <form onSubmit="App.withdrawFromProject(); return false;">
-          <table>
-            <tr><div class="form-group">
-            <td><label for="projID">Project ID:</label></td>
-           <td><input
+          <div class="form-group">
+            <label for="projID">Project ID:</label>
+            <input
               type="text"
               class="form-control"
               id="projID"
               placeholder="Enter ID"
               name="projID"
-            /></td></div></tr>
-          
-          <tr><div class="form-group">
-            <td><label for="amount">amount:</label></td>
-            <td><input
+            />
+          </div>
+          <div class="form-group">
+            <label for="amount">amount:</label>
+            <input
               type="number"
               class="form-control"
               id="amount"
               placeholder="Enter value"
               name="amount"
-            /></td>
-          </div></tr>
-          <tr><div class="form-group">
-            <td><label for="Reason">Reason:</label></td>
-            <td><input
+            />
+          </div>
+          <div class="form-group">
+            <label for="Reason">Reason:</label>
+            <input
               type="text"
               class="form-control"
               id="Reason"
               placeholder="Enter Reason"
               name="Reason"
-            /></td>
-          </div></tr>
+            />
+          </div>
 
-         <tr><td colspan="2"><center><button type="submit" class="btn btn-default">Submit</button></center></td></tr></table>
+          <button type="submit" class="btn btn-default">Submit</button>
         </form>
-      </div><br><br>
+      </div>
 
       <div id="viewAllTransactionsHTML">
         <div>TRANSACTIONS OF A PROJECT</div>
         <form onSubmit="App.transactionsOfProject(); return false;">
-          <table><tr><div class="form-group">
-           <td><label for="globalIndex">Index:</label></td>
-            <td><input
+          <div class="form-group">
+            <label for="globalIndex">Index:</label>
+            <input
               type="text"
               class="form-control"
               id="projID1"
               placeholder="Enter ID"
               name="projID"
-            /></td>
-          </div></tr>
-          <tr><td colspan="2"><button type="submit" class="btn btn-default">Submit</button></td></tr></table>
+            />
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
         </form>
         <div>ALL Transaction</div>
         <ul id="allTransactions" class="list-unstyled text-center">
-          <div class="viewAllTransactionsTemplate" style="border: 2px solid #4caf50; width: 400px;">
+          <div class="viewAllTransactionsTemplate" style="border-style: solid;">
             <label>
               <div class="globalIndexTransaction">Global Index</div>
               <div class="adminTransaction">Admin</div>
@@ -412,7 +342,7 @@ outline:solid #f1f1f1;
 
       <div id="viewReputationHTML">
         <ul id="reputation" class="list-unstyled text-center">
-          <div class="reputationTemplate" style="border: 2px solid #4caf50; width: 400px;">
+          <div class="reputationTemplate" style="border-style: solid;">
             <label>
               <div class="repBal">Reputation Tokens Held</div>
             </label>
@@ -421,52 +351,47 @@ outline:solid #f1f1f1;
       </div>
 
       <div id="homeHTML" class="text-center">
-        <div class="hd" style="font-size: 100PX;">PROJECT-CREATOR</div>
-        <div onclick="App.goToViewRepTokens()" class="hd1" style="background-color:rgb(30, 167, 83, 0.1);top: 30px;">View Reputation Tokens</div>
-        <div onclick="App.goToSubmitProof()" class="hd2" style="background-color:rgb(30, 167, 83, 0.1);top: 50px;">Submit Proof</div>
-        <!-- <img src="projC.jpg" alt="X"> -->
+        <img src="projC.jpg" alt="X">
       </div>
 
       <div id="submitProofHTML" class="text-center">
-        <div>SUBMIT PROOF</div><br><br>
+        <div>SUBMIT PROOF</div>
         <form onSubmit="App.submitProof(); return false;">
-          <table>
-          <tr><div class="form-group">
-            <td><label for="name">Global Index:</label></td>
-            <td><input
+          <div class="form-group">
+            <label for="name">global Index:</label>
+            <input
               type="number"
               class="form-control"
               id="globalIndex"
               placeholder="Enter Index"
               name="globalIndex"
-            /></td>
-          </div></tr>
-          <tr><div class="form-group">
-            <td><label for="name">TransactionIndex:</label></td>
-            <td><input
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">TransactionIndex:</label>
+            <input
               type="number"
               class="form-control"
               id="TransactionIndex"
               placeholder="Enter id"
               name="TransactionIndex"
-            /></td>
-          </div></tr>
-          <tr><div class="form-group">
-            <td><label for="link">link</label></td>
-            <td><input
+            />
+          </div>
+          <div class="form-group">
+            <label for="link">link</label>
+            <input
               type="text"
               class="form-control"
               id="link"
               placeholder="Enter link"
               name="link"
-            /></td>
-          </div></tr>
+            />
+          </div>
 
-          <tr><td colspan="2"><button type="submit" class="btn btn-default">Submit</button></td></tr></table>
+          <button type="submit" class="btn btn-default">Submit</button>
         </form></center>
       </div>
     </div>
-    
 
     <div id="MODERATOR">
       <!-- SIDEBAR -->
@@ -497,14 +422,10 @@ outline:solid #f1f1f1;
       </div>
       <!-- SIDEBAR -->
 
-      <center><div id="modHomeHTML" class="text-center">
-        <div class="hd" style="font-size: 100PX;">MODERATOR</div>
-        <!-- <img src="moderator.jpg" alt="x"> -->
-      </div>
+      <center><div id="modHomeHTML" class="text-center"><img src="moderator.jpg" alt="x"></div>
       <div id="validateTransactionHTML" class="text-center">
-        <form onSubmit="App.genRandomTransactionMod(); return false;"><table>
-          <tr><td>
-          <button type="submit" class="btn btn-default">Give me a transaction to validate</button></td></tr></table>
+        <form onSubmit="App.genRandomTransactionMod(); return false;">
+          <button type="submit" class="btn btn-default">Give me a transaction to validate</button>
         </form>
         <ul id="validateTransaction" class="list-unstyled text-center">
           <div class="validateTransactionTemplate" >
@@ -520,17 +441,17 @@ outline:solid #f1f1f1;
           </div>
         </ul>
         <form onSubmit="App.modValidateTransaction(); return false;">
-         <table> <tr><div class="form-group">
-            <td><label for="answerMod">1=YES,0=NO :  </label></td>
-            <td><input
+          <div class="form-group">
+            <label for="answerMod">1=yes,0=no</label>
+            <input
               type="number"
               class="form-control"
               id="answerMod"
               placeholder="Enter ID"
               name="projID"
-            /></td>
-          </div></tr>
-          <tr><td colspan="2"><button type="submit" class="btn btn-default">Submit</button></td></tr></table>
+            />
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
         </form>
       </div>
       <div id="viewModTokenHTML" class="text-center">
@@ -548,8 +469,8 @@ outline:solid #f1f1f1;
         <a onclick="App.goToDonorHome()">Home</a>
         <a onclick="App.goToViewAllProjectsDonor()">View All Projects</a> 
         <a onclick="App.goToViewAllAdminsDonor()">View Admins</a>
-        <!-- <a onclick="App.goToDonate()">Donate</a>
-        <a onclick="App.goToViewTransactionsDonor()">View Transaction</a> -->
+        <a onclick="App.goToDonate()">Donate</a>
+        <a onclick="App.goToViewTransactionsDonor()">View Transaction</a>
       </div>
       <script>
         function openNav2() {
@@ -568,42 +489,38 @@ outline:solid #f1f1f1;
       </div>
       <!-- SIDEBAR -->
       <center><div id="donorHomeHTML" class="text-center">
-        <div class="hd" style="font-size: 100PX;">DONOR</div>
-        <div onclick="App.goToDonate()" class="hd1" style="background-color:rgb(30, 167, 83, 0.1);top: 30px;">Donate</div>
-        <div onclick="App.goToViewTransactionsDonor()" class="hd2"
-        style="background-color:rgb(30, 167, 83, 0.1);top: 50px;"">View Transaction</div>
-        <!-- <img src="donor.png" alt="x" width="750" height="600"> -->
+        <img src="donor.png" alt="x" width="750" height="600">
       </div>
       <div id="donateHTML">
         <form onSubmit="App.donateToProject(); return false;">
-          <table><tr><div class="form-group">
-            <td><label for="mainIndex">Project Index:</label></td>
-            <td><input
+          <div class="form-group">
+            <label for="mainIndex">Project Index:</label>
+            <input
               type="number"
               class="form-control"
               id="mainIndex"
               placeholder="Enter Index"
               name="mainIndex"
-            /></td>
-          </div></tr>
-          <tr><div class="form-group">
-            <td><label for="value">value:</label></td>
-            <td><input
+            />
+          </div>
+          <div class="form-group">
+            <label for="value">value:</label>
+            <input
               type="number"
               class="form-control"
               id="value"
               placeholder="Enter value"
               name="value"
-            /></td>
-          </div></tr>
+            />
+          </div>
 
-          <tr><td colspan="2"><button type="submit" class="btn btn-default">Submit</button></td></tr></table>
+          <button type="submit" class="btn btn-default">Submit</button>
         </form>
       </div>
       <div id="allProjectDonorHTML">
         <div class="text-center">View All Projects</div>
         <ul id="allProjectsDonor" class="list-unstyled text-center">
-          <div class="allProjectsDonorTemplate" style="border: 2px solid #4caf50; width: 400px; display: inline-block;">
+          <div class="allProjectsDonorTemplate" style="border-style: solid; display: inline-block;">
             <label>
               <div class="pID">Task ID</div>
               <div class="pName">Name</div>
@@ -622,7 +539,7 @@ outline:solid #f1f1f1;
       <div id="viewAllAdminsDonorHTML">
           <div class="text-center">ALL ADMINS</div>
           <ul id="allAdminsDonor" class="list-unstyled text-center">
-            <div class="allAdminsDonorTemplate" style="border: 2px solid #4caf50; width: 400px; display: inline-block;">
+            <div class="allAdminsDonorTemplate" style="border-style: solid; display: inline-block;">
               <label>
                 <div class="adminAddr">Project Creator Addresses</div>
               </label>
@@ -632,22 +549,21 @@ outline:solid #f1f1f1;
       <div id="viewAllTransactionsDonorHTML" class="text-center">
         <div>TRANSACTIONS OF A PROJECT</div>
         <form onSubmit="App.transactionsOfProjectDonor(); return false;">
-          <table>
-          <tr><div class="form-group">
-            <td><label for="globalIndex">Index:</label></td>
-            <td><input
+          <div class="form-group">
+            <label for="globalIndex">Index:</label>
+            <input
               type="text"
               class="form-control"
               id="projID1"
               placeholder="Enter ID"
               name="projID"
-            /></td>
-          </div></tr>
-          <tr><td colspan="2"><button type="submit" class="btn btn-default">Submit</button></td></tr></table>
+            />
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
         </form>
         <div>ALL Transaction</div>
         <ul id="allTransactionsDonor" class="list-unstyled text-center">
-          <div class="viewAllTransactionsTemplateDonor" style="border: 2px solid #4caf50; width: 400px; display: inline-block;">
+          <div class="viewAllTransactionsTemplateDonor" style="border-style: solid; display: inline-block;">
             <label>
               <div class="globalIndexTransactionDonor">Global Index</div>
               <div class="adminTransactionDonor">Admin</div>
@@ -661,7 +577,7 @@ outline:solid #f1f1f1;
           </div>
         </ul>
       </div>
-      </center></div>
+      </center>
     </div></div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
