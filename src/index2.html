@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="wave.css">
+    <link rel="stylesheet" href="card.css">
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>List</title>
+
+    <!-- Bootstrap -->
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="nav.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      /* @font-face {
+        
+        font-family: 'nunito';
+        src: url('Nunito-Regular.ttf'); 
+      } */
+      html{
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(d.jpg) no-repeat;
+        
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+      }
+      
+      /* .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        overflow-x: hidden;
+        transition: 1s;
+        padding-top: 60px;
+      } */
+
+      /* .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #ffffff;
+        display: block;
+        transition: 0.1s;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
+        .sidenav a {
+          font-size: 18px;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="MAIN-PAGE">
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+
+
+        /* Create three unequal columns that floats next to each other */
+        /* .column {
+          float: left;
+          padding: 10px;
+          height: 100px; 
+        } */
+        .form-control {
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 3px solid #4caf50;
+}
+/* .form-group {
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #4caf50;
+} */
+input{
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+button{
+  width: 100%;
+  background: none;
+  backdrop-filter: blur(4px);
+  border: 2px solid #4caf50;
+  color: white;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 12px 0;
+  transition: 0.5s;
+}
+button:hover{
+  position: relative;
+box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
+border-radius: 15px;
+background: rgba(255, 255, 255, 0.1); 
+overflow: hidden;
+display: flex ;
+justify-content: center;
+align-items: center;
+border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-left: 1px solid rgba(255, 255, 255, 0.5);
+backdrop-filter: blur(5px);
+}
+
+        .column1, .column2, .column3{
+          background-color: rgb(30, 167, 83, 0.1); cursor: pointer;
+          
+          backdrop-filter: blur(4px);
+         border:solid #f1f1f1;
+          color: #ffffff;
+          transition: 1s;
+          border-radius: 50%;
+        }
+        /* .column {text-align: center;
+  border-radius: 10px;
+  width: 300px;
+  height: fit-content;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border: 1px solid #4caf50;
+  }  */
+  /* .column1{
+    left:450px;
+    top: 50px;
+    position: relative;
+  }
+  .column2{
+    position: relative;
+    left :50px;
+    top: 100px;
+  }
+  .column3{
+    position: relative;
+    left: 50%;
+    bottom: 65px;
+    top: 33px;
+      } 
+      .column3{
+          float: left;
+          width: 300px;
+   /* left:450px;
+   width: 48%; */
+   /* height: 300px;
+   margin-top: 50px;
+   margin-left: 20px; */
+   /* margin-left: 25%; */
+      /* .column1{
+        position: relative;
+    left :50px;
+top: 100px;  
+  }*/
+      /* .row {
+            width:100%;
+            height:190px;
+            padding-top:20px;
+            padding-left:15px;
+            padding-right:15px;
+        } */
+        .column1 {
+            float:left;
+            width:300px;
+            height:300px;
+            margin-left:10%;
+            margin-top: 50px;
+            
+        }
+        .column2 {
+            float:left;
+            width:300px;
+            height:300px;
+            margin-left:10%;
+            margin-top: 50px;
+        }
+        .column3{
+          float: left;
+          width: 300px;
+   /* left:450px;
+   width: 48%; */
+   height: 300px;
+   margin-top: 50px;
+   margin-left: 10%;
+   /* margin-left: 25%; */
+      /* .column1{
+        position: relative;
+    left :50px;
+top: 100px;  
+  }
+  .column2{
+    position: relative;
+    left: 50%;
+    top: 100px
+  } */
+  
+      }
+div.column1:hover{
+  background-color: rgb(252, 252, 252);
+  border:solid  #4caf50;
+  color: #4caf50;
+
+transform: scale(1.25);
+}
+div.column2:hover{
+  background-color: rgb(252, 252, 252);
+  border:solid  #4caf50;
+  color: #4caf50;
+  transform: scale(1.25);
+}div.column3:hover{
+  background-color: rgb(252, 252, 252);
+  border:solid  #4caf50;
+  color: #4caf50;
+  transform: scale(1.25);
+}
+        .left, .right {
+          width: 33%;
+        }
+        
+        .middle {
+          width: 34%;
+        }
+        
+        /* Clear floats after the columns */
+        /* .row:after {
+          content: "";
+          display: table;
+          clear: both;
+      
+        } */
+        .hd1, .hd2{
+          position: relative;
+          font-size: 20px;
+          width:300px;
+        height: 45px;
+margin: 30px;
+box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
+border-radius: 15px;
+background: rgba(255, 255, 255, 0.1); 
+overflow: hidden;
+display: flex ;
+justify-content: center;
+align-items: center;
+border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-left: 1px solid rgba(255, 255, 255, 0.5);
+backdrop-filter: blur(5px);
+cursor: pointer;
+        /* position: relative; 
+        font-size: 30px;
+        width:400px;
+        height: 45px;
+        border-radius: 5px;
+        outline:solid #f1f1f1;
+        color: #ffffff;
+         cursor: pointer; */
+        }
+        .oc{
+          position: absolute;
+          width: 300px;
+          height:40px;
+  top: 0;
+  left: 40%;
+  z-index: 1;
+  /* background: #fff; */
+  background:rgb(255, 255, 255, 0.5);
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 30 px;
+  font-weight: 500;
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition:0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          /* background: rgb(255, 255, 255);
+          color: #111;
+          width: 50%;
+          height: 110px;
+          border-radius: 10px;
+          visibility: hidden;
+          opacity: 0;
+          transition: 0.5s;
+          padding-top: 8px; */
+        }
+         .tip:hover .oc{
+visibility: visible;
+top:50px;
+opacity: 1;
+height: 45px;
+font-size: 25px;
+border-radius: 30px;
+color: #111;
+box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+background:  rgb(255, 255, 255);
+
+        }
+        .tip .oc:before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: rgb(255, 255, 255);
+  /* background: rgb(255, 255, 255); */
+  left : 50%;
+  top: -8px;
+  /* left: 50%;
+  bottom: -6px; */
+  transform: translateX(-50%) rotate(45deg);
+  transition: 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+    .oh{
+width: 25%;     
+border-radius:25px;
+ color: rgb(255, 255, 255);
+ background: rgba(255, 255, 255, 0.1);
+ backdrop-filter: blur(5px);
+      cursor: pointer;
+      transition: 1s;
+      border: 1px solid #f1f1f1;
+    }
+    h1.oh:hover{
+      background: rgb(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.75);
+      /* border: 2px solid #4caf50; */
+      border-radius: 30px;
+      backdrop-filter: blur(5px);
+      border: 1px solid #f1f1f1;
+      width: 25%;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+    }
+    /* img{width: 200px; height:200px; position: relative;
+    }
+    img:hover{
+      transform: scale(1.25);
+    } */
+      </style>
+      <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
+      <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+      <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
+      <center><div class="text-center"  ><div class="tip">
+        <h1 class="oh">Decentralized NGO</h1><br>
+        <div class="oc">Project by Team ASA</div></div>
+      </div></center><br><br>
+      <!-- <center><img src="ebw.png" alt="logo" ></center> -->
+       <center><div class="row" >
+        <div class="card"  ><img src="gear.png"  ><div class="content"><h2>01</h2>
+        <!-- <center><h1 style="font-size: 50px; margin-top: 85px;" onclick="App.SET_PROJECT_CREATOR()">Project Creator</h1></center> -->
+        <h1 style="font-size: 60px; margin-top: 85px;" onclick="App.SET_PROJECT_CREATOR()">Project Creator</h1>
+         </div></div>
+         <div class="card"><img src="plus.png"  ><div class="content">
+           <h2>02</h2>
+          <!-- <center><h1 style="font-size: 50px; margin-top: 115px;" onclick="App.SET_MODERATOR()">Moderator</h1></center> -->
+          <h1 style="font-size: 50px; margin-top: 115px;" onclick="App.SET_MODERATOR()">Moderator</h1>
+         
+         </div></div>
+         <div class="card">  <img src="dol.png"  >
+          <div class="content">
+          
+           <h2>03</h2>
+          <!-- <center><h1 style="font-size: 50px; margin-top: 115px;" onclick="App.SET_DONOR()">Donor</h1></center> -->
+          <h1 style="font-size: 70px; margin-top: 115px;" onclick="App.SET_DONOR()">Donor</h1>
+        <!-- <div id="column" class="column left text-center" style="background-color: rgb(30, 167, 83, 0.1); cursor: pointer; ">
+         <center><h1 onclick="App.SET_PROJECT_CREATOR()">Project Creator</h1></center>
+          
+        </div>
+        <div id="column" class="column middle text-center" style="background-color:rgb(30, 167, 83, 0.1); cursor: pointer;">
+          <center><h1 onclick="App.SET_MODERATOR()">Moderator</h1></center>
+        
+        </div>
+        <div id="column" class="column right text-center" style="background-color:rgb(30, 167, 83, 0.1); cursor: pointer;">
+          <center><h1 onclick="App.SET_DONOR()">Donor</h1></center> -->
+        
+        </div></div>
+      </div></center>
+      <div style="width: 100%; height:700px;">
+        <section>
+          <div class="wave wave1"></div>
+          <div class="wave wave2"></div>
+          <div class="wave wave3"></div>
+          <div class="wave wave4"></div>
+
+      </section></div>
+    </div>
+    <!-- <div style="width: 100%; height: 500px;"></div> -->
+
+    <div>
+      <div id="PROJECT-CREATOR">
+      <!-- SIDEBAR -->
+      <nav id="mySidenav" class="sidenav" >
+        <ul class="sidenav-nav">
+       <li class="logo">
+        <a href="#" class="nav-link">
+
+          <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+          </svg>
+        </a>
+       </li>
+       <li  class="nav-item" >
+        <a onclick="App.goToHome()" class="nav-link" >
+          <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+            <path class="fa-secondary" fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+            <path class="fa-primary" fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+          </svg>
+          <a onclick="App.goToHome()" class="link-text">Home</a>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a onclick="App.goToCreate()" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+            <path class="fa-secondary" d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+          </svg>
+          <a onclick="App.goToCreate()" class="link-text">Create A Project</a>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a onclick="App.goToViewMyProjects()" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-view-list" viewBox="0 0 16 16">
+            <path class="fa-secondary" d="M3 4.5h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1H3zM1 2a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 2zm0 12a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 14z"/>
+          </svg>
+          <a onclick="App.goToViewMyProjects()" class="link-text">View My Projects</a>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a onclick="App.goToViewAllProjects()" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-binoculars" viewBox="0 0 16 16">
+            <path class="fa-secondary" d="M3 2.5A1.5 1.5 0 0 1 4.5 1h1A1.5 1.5 0 0 1 7 2.5V5h2V2.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5v2.382a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V14.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 14.5v-3a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5v3A1.5 1.5 0 0 1 5.5 16h-3A1.5 1.5 0 0 1 1 14.5V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882V2.5zM4.5 2a.5.5 0 0 0-.5.5V3h2v-.5a.5.5 0 0 0-.5-.5h-1zM6 4H4v.882a1.5 1.5 0 0 1-.83 1.342l-.894.447A.5.5 0 0 0 2 7.118V13h4v-1.293l-.854-.853A.5.5 0 0 1 5 10.5v-1A1.5 1.5 0 0 1 6.5 8h3A1.5 1.5 0 0 1 11 9.5v1a.5.5 0 0 1-.146.354l-.854.853V13h4V7.118a.5.5 0 0 0-.276-.447l-.895-.447A1.5 1.5 0 0 1 12 4.882V4h-2v1.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V4zm4-1h2v-.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5V3zm4 11h-4v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V14zm-8 0H2v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V14z"/>
+          </svg>
+          <a onclick="App.goToViewAllProjects()" class="link-text">View All Projects</a>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a onclick="App.goToViewAllAdmins()" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path class="fa-secondary" d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path class="fa-primary"fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg>
+          <a onclick="App.goToViewAllAdmins()" class="link-text">View All Admins</a>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a onclick="App.goToWithdraw()" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cash-stack" viewBox="0 0 16 16">
+            <path class="fa-secondary" d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+            <path class="fa-primary" d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z"/>
+          </svg>
+          
+          <a onclick="App.goToWithdraw()" class="link-text">Withdraw from a Project</a>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a onclick="App.goToViewTransactions()" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+            <path class="fa-secondary" d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
+          </svg>
+          <a onclick="App.goToViewTransactions()" class="link-text">View All Transactions</a>
+        </a>
+      </li>
+       
+        
+        
+        <!-- <a onclick="App.goToSubmitProof()">Submit Proof</a>
+        <a onclick="App.goToViewRepTokens()">View Reputation Tokens</a>
+         --></ul>
+      </nav>
+      
+      <!-- <script>
+        function openNav() {
+          document.getElementById('mySidenav').style.width = '250px'
+        }
+
+        function closeNav() {
+          document.getElementById('mySidenav').style.width = '0'
+        }
+      </script> -->
+
+      <!-- <div>
+        <span style="font-size: 30px; cursor: pointer;" onclick="openNav()">
+          &#9776;
+        </span>
+      </div> -->
+      <!-- SIDEBAR -->
+
+      <center><div id="loader" class="text-center">
+        <p class="text-center">Loading...</p>
+      </div>
+
+      <div id="createProjectHTML" class="text-center">
+        <form onSubmit="App.createProject(); return false;">
+         <table> 
+           <tr><div class="form-group">
+            <td><label for="name">Name:</label></td>
+            <td><input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter name"
+              name="name"
+            /></td>
+          </div></tr>
+          <tr><div class="form-group">
+           <td> <label for="desc">Desc:</label></td>
+            <td><input
+              type="text"
+              class="form-control"
+              id="desc"
+              placeholder="Enter desc"
+              name="desc"
+            /></td>
+          </div></tr>
+          <tr><div class="form-group">
+            <td><label for="limit">limit:</label></td>
+            <td><input
+              type="number"
+              class="form-control"
+              id="limit"
+              placeholder="Enter value"
+              name="limit"
+            /></td>
+          </div></tr>
+
+          <tr><td colspan="2" style="text-align: center;"><button type="submit" class="btn btn-default">Submit</button></td></tr></table>
+        </form>
+      </div><br></center>
+
+     <div id="viewAllProjectsHTML">
+        <center><div class="text-center" style="font-size: 20px;">View All Projects</div></center>
+        <ul id="allProjects" class="list-unstyled text-center"  style="left: 37.5%; position:absolute;">
+          <div class="allProjectsTemplate" style="border: 2px solid #4caf50; width: 400px;padding: 10px 50px 10px 50px; display: inline-block; ">
+            <label >
+              <div class="pID">Task ID</div>
+              <div class="pName">Name</div>
+              <div class="pDesc">Description</div>
+              <div class="pLimit">Limit</div>
+              <div class="pAdmin">Admin</div>
+            </label>
+          </div>
+        </ul>
+      </div>
+
+      <div id="viewMyProjectsHTML">
+        <center><div class="text-center" style="font-size:20px">View My Project</div></center>
+        <ul id="myProjects" class="list-unstyled text-center" style="left: 37.5%; position:absolute;">
+          <div class="myProjectsTemplate" style="border: 2px solid #4caf50; width: 400px;padding: 10px 50px 10px 50px;">
+            <label>
+              <div class="pID">Task ID</div>
+              <div class="pName">Name</div>
+              <div class="pDesc">Description</div>
+              <div class="pLimit">Limit</div>
+              <div class="pAdmin">Admin</div>
+              <div class="pDonatedVal">Donated Val</div>
+              <div class="pBal">Remaining to raise</div>
+              <div class="pNOT">Num of Transaction</div>
+              <div class="pAdminIndex">Admin Index</div>
+              <div class="pSpent">Spent</div>
+            </label>
+          </div>
+        </ul>
+      </div>
+
+      <div id="viewAllAdminsHTML" >
+        <center><div class="="text-center>ALL ADMINS</div></center>
+        <ul id="allAdmins" class="list-unstyled text-center"style="left: 37.5%; position:absolute;">
+          <div class="allAdminsTemplate" style="border: 2px solid #4caf50; width: 400px;padding: 10px 50px 10px 50px;">
+            <label>
+              <div class="adminAddr">Project Creator Addresses</div>
+            </label>
+          </div>
+        </ul>
+      </div>
+
+      <center><div id="withdrawFromProjectHTML">
+        <div>WITHDRAW</div>
+        <form onSubmit="App.withdrawFromProject(); return false;">
+          <table>
+            <tr><div class="form-group">
+            <td><label for="projID">Project ID:</label></td>
+           <td><input
+              type="text"
+              class="form-control"
+              id="projID"
+              placeholder="Enter ID"
+              name="projID"
+            /></td></div></tr>
+          
+          <tr><div class="form-group">
+            <td><label for="amount">amount:</label></td>
+            <td><input
+              type="number"
+              class="form-control"
+              id="amount"
+              placeholder="Enter value"
+              name="amount"
+            /></td>
+          </div></tr>
+          <tr><div class="form-group">
+            <td><label for="Reason">Reason:</label></td>
+            <td><input
+              type="text"
+              class="form-control"
+              id="Reason"
+              placeholder="Enter Reason"
+              name="Reason"
+            /></td>
+          </div></tr>
+
+         <tr><td colspan="2"><center><button type="submit" class="btn btn-default">Submit</button></center></td></tr></table>
+        </form>
+      </div></center><br><br>
+
+      <div id="viewAllTransactionsHTML" >
+        <center><div style="font-size: 25px;">TRANSACTIONS OF A PROJECT</div>
+        <form onSubmit="App.transactionsOfProject(); return false;">
+          <table><tr><div class="form-group">
+           <td><label for="globalIndex">Index:</label></td>
+            <td><input
+              type="text"
+              class="form-control"
+              id="projID1"
+              placeholder="Enter ID"
+              name="projID"
+            /></td>
+          </div></tr>
+          <tr><td colspan="2"><button type="submit" class="btn btn-default">Submit</button></td></tr></table>
+        </form></center>
+        <center><div>ALL Transactions</div></center>
+        <ul id="allTransactions" class="list-unstyled text-center"style="left: 37.5%; position:absolute;">
+          <div class="viewAllTransactionsTemplate" style="border: 2px solid #4caf50; width: 400px;padding: 10px 50px 10px 50px;">
+            <label>
+              <div class="globalIndexTransaction">Global Index</div>
+              <div class="adminTransaction">Admin</div>
+              <div class="adminProjIndexTransaction">Admin Project Index</div>
+              <div class="TransactionIndex">TransactionIndex</div>
+              <div class="purposeTransaction">purpose</div>
+              <div class="valueTransaction">value</div>
+              <div class="linkTransaction">Proof Link</div>
+              <div class="verifiedTransaction">verified</div>
+            </label>
+          </div>
+        </ul>
+      </div>
+
+      <div id="viewReputationHTML">
+        <ul id="reputation" class="list-unstyled text-center" style="left: 37.5%; position:absolute;">
+          <div class="reputationTemplate" style="border: 2px solid #4caf50; width: 400px;padding: 10px 50px 10px 50px;">
+            <label>
+              <div class="repBal">Reputation Tokens Held</div>
+            </label>
+          </div>
+        </ul>
+      </div>
+
+      <center><div id="homeHTML" class="text-center">
+        <div class="hd" style="font-size: 100PX;">PROJECT-CREATOR</div>
+        <p style="font-size: 20px;">Anyone over internet can become NGO by performing a simple steps.<br>
+          The NGOs are incentivized by tokens to keep submitting proof and perform<br> valid transactions so that they can do more withdrawals and of larger amounts.</p>
+        <div onclick="App.goToViewRepTokens()" class="hd1" >View Reputation Tokens</div>
+        <div onclick="App.goToSubmitProof()" class="hd2" >Submit Proof</div>
+        <!-- <img src="projC.jpg" alt="X"> -->
+      </div></center>
+
+      <div id="submitProofHTML" class="text-center">
+        <center><div style="font-size: 25px;">SUBMIT PROOF</div><br><br>
+        <form onSubmit="App.submitProof(); return false;">
+          <table>
+          <tr><div class="form-group">
+            <td><label for="name">Global Index:</label></td>
+            <td><input
+              type="number"
+              class="form-control"
+              id="globalIndex"
+              placeholder="Enter Index"
+              name="globalIndex"
+            /></td>
+          </div></tr>
+          <tr><div class="form-group">
+            <td><label for="name">TransactionIndex:</label></td>
+            <td><input
+              type="number"
+              class="form-control"
+              id="TransactionIndex"
+              placeholder="Enter id"
+              name="TransactionIndex"
+            /></td>
+          </div></tr>
+          <tr><div class="form-group">
+            <td><label for="link">link:</label></td>
+            <td><input
+              type="text"
+              class="form-control"
+              id="link"
+              placeholder="Enter link"
+              name="link"
+            /></td>
+          </div></tr>
+
+          <tr><td colspan="2"><button type="submit" class="btn btn-default">Submit</button></td></tr></table>
+        </form></center>
+      </div>
+    </div>
+    
+
+    <div id="MODERATOR">
+      <!-- SIDEBAR -->
+      <nav id="mySidenav1" class="sidenav" >
+        <ul class="sidenav-nav">
+       <li class="logo">
+        <a href="#" class="nav-link">
+
+          <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+          </svg>
+        </a>
+       </li>
+       <li  class="nav-item" >
+        <a onclick="App.goToModHome()" class="nav-link" >
+          <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+            <path class="fa-secondary" fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+            <path class="fa-primary" fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+          </svg>
+          <a onclick="App.goToModHome()" class="link-text">Home</a>
+        </a>
+      </li></ul></nav>
+      <!-- <div id="mySidenav1" class="sidenav" style="background-color:rgb(30, 167, 83, 0.1); color: aliceblue;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">
+          &times;
+        </a>
+        <a onclick="App.goToModHome()">Home</a>
+         <a onclick="App.goToValidateTransaction()">Validate Transactions</a>
+        <a onclick="App.goToViewModTokens()">View My Mod Tokens</a> -->
+      <!-- </div>
+      <script>
+        function openNav1() {
+          document.getElementById('mySidenav1').style.width = '250px'
+          console.log("mod nav open")
+        }
+
+        function closeNav1() {
+          document.getElementById('mySidenav1').style.width = '0'
+          console.log("mod nav close")
+        }
+      </script> --> 
+
+    
+      <!-- SIDEBAR -->
+
+      <center><div id="modHomeHTML" class="text-center">
+        <div class="hd" style="font-size: 100PX;">MODERATOR</div>
+        <p style="font-size: 20px;">Anyone over internet can become an Moderator.	<br>
+          Moderators validate completed withdrawals by the NGOs and<br> award reputation tokens (ERC-20 ) to the respective NGOs.<br>
+          There are only a few steps for Moderators to validate the NGOs Transcations</p>
+        <div onclick="App.goToValidateTransaction()" class="hd1">Validate Transactions</div>
+        <div onclick="App.goToViewModTokens()" class="hd2">View My Mod Tokens</div>
+        <!-- <img src="moderator.jpg" alt="x"> -->
+      </div></center>
+      <div id="validateTransactionHTML" class="text-center">
+        <center><form onSubmit="App.genRandomTransactionMod(); return false;"><table>
+          <tr><td>
+          <button type="submit" class="btn btn-default">Give me a transaction to validate</button></td></tr></table>
+        </form></center>
+        <ul id="validateTransaction" class="list-unstyled text-center" >
+          <div class="validateTransactionTemplate" style=" width: 400px;padding: 10px 50px 10px 50px;left: 37.5%; position:relative;" >
+            <label>
+              <div>Validate The Transaction</div>
+              <div class="purposeTransactionValidate">purpose</div>
+              <div class="valueTransactionValidate">value</div>
+              <div class="proofLinkTransactionValidate">proof link</div>
+              <div class="adminTransactionValidate">admin</div>
+              <div class="projIndexTransactionValidate">project Local Index</div>
+              <div class="transactionIndexTransactionValidate">Transaction Index</div>
+            </label>
+          </div>
+        </ul>
+        <center><form onSubmit="App.modValidateTransaction(); return false;">
+         <table> <tr><div class="form-group">
+            <td><label for="answerMod">1=YES,0=NO :  </label></td>
+            <td><input
+              type="number"
+              class="form-control"
+              id="answerMod"
+              placeholder="Enter ID"
+              name="projID"
+            /></td>
+          </div></tr>
+          <tr><td colspan="2"><button type="submit" class="btn btn-default">Submit</button></td></tr></table>
+        </form></center>
+      </div>
+      
+      <center><div id="viewModTokenHTML" class="text-center" style="font-size: 25px;">
+        <div >Your Moderator Token Balance is</div>
+        <div id = "balanceMod"></div>
+      </div></center>
+    </div>
+
+    <div id="DONOR">
+      <nav id="mySidenav" class="sidenav" >
+        <ul class="sidenav-nav">
+       <li class="logo">
+        <a href="#" class="nav-link">
+
+          <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+          </svg>
+        </a>
+       </li>
+       <li  class="nav-item" >
+        <a onclick="App.goToDonorHome()" class="nav-link" >
+          <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+            <path class="fa-secondary" fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+            <path class="fa-primary" fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+          </svg>
+          <a onclick="App.goToDonorHome()" class="link-text">Home</a>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a onclick="App.goToViewAllProjects()" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-binoculars" viewBox="0 0 16 16">
+            <path class="fa-secondary" d="M3 2.5A1.5 1.5 0 0 1 4.5 1h1A1.5 1.5 0 0 1 7 2.5V5h2V2.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5v2.382a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V14.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 14.5v-3a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5v3A1.5 1.5 0 0 1 5.5 16h-3A1.5 1.5 0 0 1 1 14.5V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882V2.5zM4.5 2a.5.5 0 0 0-.5.5V3h2v-.5a.5.5 0 0 0-.5-.5h-1zM6 4H4v.882a1.5 1.5 0 0 1-.83 1.342l-.894.447A.5.5 0 0 0 2 7.118V13h4v-1.293l-.854-.853A.5.5 0 0 1 5 10.5v-1A1.5 1.5 0 0 1 6.5 8h3A1.5 1.5 0 0 1 11 9.5v1a.5.5 0 0 1-.146.354l-.854.853V13h4V7.118a.5.5 0 0 0-.276-.447l-.895-.447A1.5 1.5 0 0 1 12 4.882V4h-2v1.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V4zm4-1h2v-.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5V3zm4 11h-4v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V14zm-8 0H2v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V14z"/>
+          </svg>
+          <a onclick="App.goToViewAllProjectsDonor()" class="link-text">View All Projects</a>
+          </a></li>
+          <li class="nav-item">
+            <a onclick="App.goToViewAllAdminsDonor()" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path class="fa-secondary" d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path class="fa-primary"fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>
+              <a onclick="App.goToViewAllAdminsDonor()" class="link-text">View All Admins</a>
+            </a>
+          </li></ul></nav>
+      <!-- SIDEBAR -->
+      <!-- <div id="mySidenav2" class="sidenav" style="background-color:rgb(30, 167, 83, 0.1); color: aliceblue;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">
+          &times;
+        </a>
+        <a onclick="App.goToDonorHome()">Home</a>
+        <a onclick="App.goToViewAllProjectsDonor()">View All Projects</a> 
+        <a onclick="App.goToViewAllAdminsDonor()">View Admins</a>
+        <a onclick="App.goToDonate()">Donate</a>
+        <a onclick="App.goToViewTransactionsDonor()">View Transaction</a> -->
+      <!-- </div>
+      <script>
+        function openNav2() {
+          document.getElementById('mySidenav2').style.width = '250px'
+        }
+
+        function closeNav2() {
+          document.getElementById('mySidenav2').style.width = '0'
+        }
+      </script> -->
+
+      <!-- <div>
+        <span style="font-size: 30px; cursor: pointer;" onclick="openNav2()">
+          &#9776;
+        </span>
+      </div> --> 
+      <!-- SIDEBAR -->
+      <center><div id="donorHomeHTML" class="text-center">
+        <div class="hd" style="font-size: 100PX;">DONOR</div>
+        <p style="font-size: 20px;">People will no longer need to give money to a non-transparent <br>intermediary when they could give it directly to groups on the ground who are ready to take direct action.<br>
+          The donations can be used by community service, civil structure restoration and gadget building.<br>
+          Users will be able to track the proposal funding through the blockchain, and see concrete <br>evidence of exactly what results their support achieved.<br>
+          We uses decentralized curation of proposals, and proposals that are approved have to show proof <br>that they’ve taken the actions they outlined in their submission for funding, as well as reporting on the results.</p>
+        <div onclick="App.goToDonate()" class="hd1" >Donate</div>
+        <div onclick="App.goToViewTransactionsDonor()" class="hd2">View Transaction</div>
+        <!-- <img src="donor.png" alt="x" width="750" height="600"> -->
+      </div></center>
+      <div id="donateHTML">
+        <center><form onSubmit="App.donateToProject(); return false;">
+          <table><tr><div class="form-group">
+            <td><label for="mainIndex">Project Index:</label></td>
+            <td><input
+              type="number"
+              class="form-control"
+              id="mainIndex"
+              placeholder="Enter Index"
+              name="mainIndex"
+            /></td>
+          </div></tr>
+          <tr><div class="form-group">
+            <td><label for="value">value:</label></td>
+            <td><input
+              type="number"
+              class="form-control"
+              id="value"
+              placeholder="Enter value"
+              name="value"
+            /></td>
+          </div></tr>
+
+          <tr><td colspan="2"><button type="submit" class="btn btn-default">Submit</button></td></tr></table>
+        </form></center>
+      </div>
+      <div id="allProjectDonorHTML">
+        <center><div class="text-center" style="font-size: 20px;">View All Projects</div></center>
+        <ul id="allProjectsDonor" class="list-unstyled text-center" style="left: 37.5%; position:absolute;">
+          <div class="allProjectsDonorTemplate" style="border: 2px solid #4caf50; width: 400px;padding: 10px 50px 10px 50px; display: inline-block;">
+            <label>
+              <div class="pID">Task ID</div>
+              <div class="pName">Name</div>
+              <div class="pDesc">Description</div>
+              <div class="pLimit">Limit</div>
+              <div class="pAdmin">Admin</div>
+              <div class="pDonatedVal">Donated Val</div>
+              <div class="pBal">Remaining to raise</div>
+              <div class="pNOT">Num of Transaction</div>
+              <div class="pAdminIndex">Admin Index</div>
+              <div class="pSpent">Spent</div>
+            </label>
+          </div>
+        </ul>
+      </div>
+      <div id="viewAllAdminsDonorHTML" >
+          <center><div class="text-center">ALL ADMINS</div></center>
+          <ul id="allAdminsDonor" class="list-unstyled text-center"style="left: 37.5%; position:absolute;">
+            <div class="allAdminsDonorTemplate" style="border: 2px solid #4caf50; width: 400px;padding: 10px 50px 10px 50px; display: inline-block;">
+              <label>
+                <div class="adminAddr">Project Creator Addresses</div>
+              </label>
+            </div>
+          </ul>
+      </div>
+      <div id="viewAllTransactionsDonorHTML" class="text-center">
+        <center><div>TRANSACTIONS OF A PROJECT</div></center>
+        <center><form onSubmit="App.transactionsOfProjectDonor(); return false;">
+          <table>
+          <tr><div class="form-group">
+            <td><label for="globalIndex">Index:</label></td>
+            <td><input
+              type="text"
+              class="form-control"
+              id="projID1"
+              placeholder="Enter ID"
+              name="projID"
+            /></td>
+          </div></tr>
+          <tr><td colspan="2"><button type="submit" class="btn btn-default">Submit</button></td></tr></table>
+        </form></center>
+        <center><div>ALL Transaction</div></center>
+        <ul id="allTransactionsDonor" class="list-unstyled text-center" style="left: 37.5%; position:absolute;">
+          <div class="viewAllTransactionsTemplateDonor" style="border: 2px solid #4caf50; width: 400px;padding: 10px 50px 10px 50px; display: inline-block;">
+            <label>
+              <div class="globalIndexTransactionDonor">Global Index</div>
+              <div class="adminTransactionDonor">Admin</div>
+              <div class="adminProjIndexTransactionDonor">Admin Project Index</div>
+              <div class="TransactionIndexDonor">TransactionIndex</div>
+              <div class="purposeTransactionDonor">purpose</div>
+              <div class="valueTransactionDonor">value</div>
+              <div class="linkTransactionDonor">Proof Link</div>
+              <div class="verifiedTransactionDonor">verified</div>
+            </label>
+          </div>
+        </ul>
+      </div>
+      </div>
+    </div></div>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+      VanillaTilt.init(document.querySelectorAll(".hd1"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+      VanillaTilt.init(document.querySelectorAll(".hd2"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+      VanillaTilt.init(document.querySelectorAll("button"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+
+      //It also supports NodeList
+      // VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/truffle-contract/dist/truffle-contract.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

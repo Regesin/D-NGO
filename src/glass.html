@@ -1,0 +1,35 @@
+<html>
+    <head></head>
+    <body>
+        <style>
+            .large{
+background-color: #111;
+position: relative;
+width: 100%;
+overflow: hidden;
+background-size: cover;
+background-position: center center;
+z-index: 1;
+            }
+            .dc .large{
+                background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo");
+            }
+            @media only screen and (max-width:768px){}
+
+        </style>
+        <div class="container demo">
+            <div class="content">
+                <div id="large" class="large">
+                    <canvas id="dc"></canvas>
+                    <h1 class="main">
+                        <span class="thin">Explore</span>Space
+                    </h1>
+                </div>
+
+            </div>
+        </div>
+        <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
+        <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+        <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
+    </body>
+</html>
